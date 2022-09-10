@@ -1,3 +1,36 @@
-img{
-    border: 2px solid green;
+.divBox{
+    width: 200px;
+    height: 200px;    
+    margin: 20px;
+}
+
+#div1{
+    background-color: Pink;
+}
+
+#div2{
+    background-color: green;
+}
+
+#div3{
+    background-color: pink;
+}
+
+/*
+Div 1
+<= 768px Div 1 Color : Yellow
+768 < <= 992 color : green
+992 > Pink
+*/
+
+@media only screen and (max-width: 768px) {
+    #div1{
+        background-color: yellow;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #div1{
+        background-color: green;
+    }
 }
